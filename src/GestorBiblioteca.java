@@ -58,5 +58,19 @@ public class GestorBiblioteca {
         } else {
             libro.setEstado(EstadoLibro.DISPONIBLE);
         }
+
+    if (usuario.getPrestamosActuales().size() >= 3) {
+        throw new LimitePrestamosExcedidoException("El usuario ya tiene 3 libros prestados");
+    }
+
+    boolean bloqueado = usuario.getHistorialPrestamos().stream() 
+        .filter(p -> p.getLibro().getIsbn().equals(isbn))
+        .anyMatch(p -> p.getFechaDevolucion() != null &&
+        p.getFechaDevolucion().plusDays(7).isAfter(LocalDate.now()));
+        
+    if (bloqueado) {
+        throw new IllegalArgumentException("Debe esperar 7 días para volver a pedir este libro");
+    }
+    
     }
 }
