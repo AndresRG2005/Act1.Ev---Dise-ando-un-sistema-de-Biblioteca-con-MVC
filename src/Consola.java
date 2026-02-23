@@ -13,4 +13,12 @@ public class Consola {
             System.out.println(l);
         }
     }
+
+    public void mostrarUsuarios(List<Usuario> usuarios) {
+        System.out.println("=== Usuarios ===");
+        for (Usuario u : usuarios) {
+            System.out.println(u);
+        }
+    }
+
 }
