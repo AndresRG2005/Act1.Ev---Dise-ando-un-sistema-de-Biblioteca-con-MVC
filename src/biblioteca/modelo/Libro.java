@@ -33,12 +33,14 @@ public class Libro {
     }
 
     public Object getIsbn() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getIsbn'");
     }
 
     public void setEstado(EstadoLibro prestado) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setEstado'");
+    }
+
+    public void setCopiasDisponibles(int i) {
+        throw new UnsupportedOperationException("Unimplemented method 'setCopiasDisponibles'");
     }
 }
