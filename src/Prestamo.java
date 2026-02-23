@@ -15,4 +15,12 @@ public class Prestamo {
         this.fechaPrestamo = fechaPrestamo;
         this.fechaVencimiento = fechaPrestamo.plusDays(30);
     }
+
+    public boolean estaVencido() {
+        return fechaDevolucion == null && LocalDate.now().isAfter(fechaVencimiento);
+    }
+
+    public void marcarDevuelto(LocalDate fechaDevolucion) {
+        this.fechaDevolucion = fechaDevolucion;
+    }
 }
