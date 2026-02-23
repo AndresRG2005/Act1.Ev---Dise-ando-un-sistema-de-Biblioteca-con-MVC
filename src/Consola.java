@@ -20,5 +20,7 @@ public class Consola {
             System.out.println(u);
         }
     }
-
+        public void mostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
+    }
 }
