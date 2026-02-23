@@ -27,4 +27,18 @@ public class Libro {
         this.copiasDisponibles = copiasTotales;
         this.estado = EstadoLibro.DISPONIBLE;
     }
+
+    public int getCopiasDisponibles() {
+        throw new UnsupportedOperationException("Unimplemented method 'getCopiasDisponibles'");
+    }
+
+    public Object getIsbn() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getIsbn'");
+    }
+
+    public void setEstado(EstadoLibro prestado) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setEstado'");
+    }
 }
