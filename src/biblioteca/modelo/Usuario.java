@@ -23,4 +23,9 @@ public class Usuario {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getId'");
     }
+
+    public List<Libro> getPrestamosActuales() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrestamosActuales'");
+    }
 }
