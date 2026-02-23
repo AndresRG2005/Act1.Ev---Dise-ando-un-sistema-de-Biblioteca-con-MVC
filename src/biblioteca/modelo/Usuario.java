@@ -18,4 +18,9 @@ public class Usuario {
         this.prestamosActuales = new ArrayList<>();
         this.historialPrestamos = new ArrayList<>();
     }
+
+    public Object getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
 }
