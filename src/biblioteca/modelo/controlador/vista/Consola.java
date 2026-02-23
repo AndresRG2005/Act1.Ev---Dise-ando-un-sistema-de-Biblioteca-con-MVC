@@ -1,4 +1,4 @@
-package biblioteca.vista;
+package biblioteca.modelo.controlador.vista;
 
 import biblioteca.modelo.Libro;
 import biblioteca.modelo.Usuario;
